@@ -13,7 +13,7 @@
       }
       section  /*element based style*/
       {
-        color: rgb(101, 226, 43);
+        color: rgb(26, 214, 228);
         text-align: justify;
       }
       h3 
@@ -24,11 +24,20 @@
       {
         color: darkred;
       }
+      li.green
+      {
+        color: greenyellow;
+      }
+      span.red
+      {
+        color: rgb(240, 9, 9);
+      }
+
       
     </style>
 </head>
 <body>
-    <h1 class="coral_color">Hoorab I &lt;3 You.</h1>
+    <h1 class="coral_color">Html, CSS and JavaScript for Web Developers - CoursEra</h1>
 	<section id="Section1"> Section 1: 
 		<a href="https://twitter.com" target="_blank" title="Twitter Link">
 			This is twitter link !
@@ -42,12 +51,27 @@
 	<div>
 		<h3> List Items </h3>
 		<ol id="darkred">
-			<li> Ordered List item 1: <a href="#Section1" title="Section1"> Link to Section 1 as List Item </a> </li>
+			<li> Ordered List item 1: <a href="#ImageDiv" title="ImageDiv"> Link to Image Div as List Item </a> </li>
 			<li> Ordered List Item 2: &quot;Some text&quot;</li>
       <li> Ordered List Item 3: <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank" title="Html Entities"> Link to Html Entities </a> </li>
 		</ol>
 	</div>
-	<div>
+  <section>
+    <H3> Combination of Selectors in Style Sheets </H3>
+    <ol>
+      <li> <span class="red">.</span>{class} Any element with class1 will be affected. </li>
+      <li> <span class="red">#</span>{id1} Any element with id1 will be affected.  </li>
+      <li> {element1} Every element1 will be affected. </li>
+      <li> {selector1}<span class="red">,</span> {selector2} Same class will affect both selectors. </li>
+      <li class="green"> {element1}<span class="red">.</span>{class1} Every Element1 with class1 will be affected. </li>
+      <li> {element1} <span class="red">&gt;</span> {element2} Element2 comes directly under Element1 will be affected. (Child Selector)</li>
+      <li> {class1} <span class="red">&gt;</span> {element2} Element2 comes directly under Element with class1 will be affected. </li>
+      <li> {element1} {element2} Every element2 comes indirectly under element1 will be affected. (Descendant Selector)</li>
+      <li> {element1} {class1} Every element with class1 comes indirectly under element1 will be affected.</li>
+      <li> <span class="red">.</span>{class1}<span class="red">.</span>{class2} Every element having both classes will be affected. To specify 2 or more classes write class = &quot;class1 class2&quot;</li>
+    </ol> 
+  </section>
+	<div id="ImageDiv">
 		<h3> Image Display </h3>
 		<img src="https://www.dawateislami.net/img/logo-dawat-e-islami_share.jpg" width="464" height="250">
     Image with specific size
