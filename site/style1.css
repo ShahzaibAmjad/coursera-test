@@ -1,0 +1,41 @@
+      .coral_color /*class based style*/
+      {
+        color: lightcoral;
+        text-align: center;
+      }
+      section  /*element based style*/
+      {
+        color: rgb(26, 214, 228);
+        text-align: justify;
+      }
+      h3 
+      {
+        color: darkorange;
+      }
+      div, #darkred /*id and element based style*/
+      {
+        color: darkred;
+      }
+      li.green
+      {
+        color: greenyellow;
+      }
+      span.red
+      {
+        color: rgb(240, 9, 9);
+      }
+      li.hov:hover, li.hov:hover > span  /* change style of li with class hov upon hover and change style of span direct child of li with class hov upon hover on li.*/
+      {
+        color: yellow;
+      }
+      li.nchild > span:nth-child(2)  /* change style of 2nd direct span child of li with class nchild */
+      {
+          color: rgb(217, 220, 20);
+      }
+      
+      /* change style of li with class act when mouse is pressed but not released. 
+      Also change style of span direct child of li with class act when mouse is pressed on li with class 
+      act but not released. */      
+      li.act:active, li.act:active > span {
+          color: yellow;
+      }
